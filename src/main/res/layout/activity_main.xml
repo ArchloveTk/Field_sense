@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/unsplash"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:text="SIGN_IN"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:layout_below="@id/signin"
+        android:background="#30ffff"
+        android:hint="username"
+        android:textColorHint="@color/black"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:drawablePadding="20dp"
+        android:drawableLeft="@drawable/baseline_person_24"
+
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:layout_below="@id/username"
+        android:hint="password"
+        android:background="#30ffff"
+        android:drawableLeft="@drawable/baseline_info_24"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:drawablePadding="20dp"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="LOGIN"
+        android:layout_below="@id/password"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:layout_margin="20dp"
+        android:onClick="onLogin"
+        />
+
+
+</RelativeLayout>
